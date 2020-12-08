@@ -1,0 +1,27 @@
+{
+  "name": "jest-runner-opa",
+  "version": "1.0.0",
+  "description": "Jest runner for Open Policy Agent testing",
+  "main": "src/index.js",
+  "repository": "https://github.com/XenitAB/jest-runner-opa",
+  "author": "Ulrik Strid <ulrik.strid@xenit.se>",
+  "license": "BSD3",
+  "private": false,
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "runner": "./src/index",
+    "moduleFileExtensions": [
+      "rego"
+    ],
+    "testMatch": [
+      "**/*_test.rego"
+    ],
+    "testPathIgnorePatterns": []
+  },
+  "dependencies": {
+    "jest": ">=24.6.0",
+    "create-jest-runner": "^0.7.0"
+  }
+}
